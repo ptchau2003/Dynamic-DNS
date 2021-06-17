@@ -23,8 +23,7 @@ def lineno():  # pragma: no cover
     """
     return str(' - line number: ' + str(inspect.currentframe().f_back.f_lineno))
 
-# DynamoDB fucntions
-
+# DynamoDB functions
 
 def get_dynamodb_client():
     """
@@ -55,7 +54,6 @@ def query_hostname_in_dynamodb_table(client, table, hostname):
     :param client:
     :param table:
     :param hostname:
-    :param ipaddress:
     :return:
     """
     try:
@@ -76,6 +74,7 @@ def put_item_in_dynamodb_table(client, table, hostname, ipaddress, instance_id):
     :param table:
     :param hostname:
     :param ipaddress:
+    :param instance_id
     :return:
     """
     try:
@@ -106,8 +105,7 @@ def delete_item_in_dynamodb_table(client, table, hostname):
     Remove item in dynamodb table
     :param client:
     :param table:
-    :param hostname:
-    :param ipaddress:
+    :param hostname
     :return:
     """
     try:
@@ -121,8 +119,6 @@ def delete_item_in_dynamodb_table(client, table, hostname):
         print("Unexpected error:" + str(err) + lineno())
 
 # EC2 functions
-
-
 def get_ec2_client():
     """
     Get ec2 client
@@ -137,6 +133,7 @@ def get_ec2_client():
 def get_instance_info(client, instance_id):
     """
     Get ec2 instance information
+    :param instance_id
     :return:
     """
     try:
@@ -145,8 +142,6 @@ def get_instance_info(client, instance_id):
         print("Unexpected error:" + str(err) + lineno())
 
 # Route53 function
-
-
 def get_route53_client():
     """
     Get route53 client
@@ -164,7 +159,9 @@ def change_resource_recordset(client, zone_id, host_name, hosted_zone_name, reco
     :param zone_id:
     :param host_name:
     :param hosted_zone_name:
+    :param record_type
     :param value:
+    :param action:
     :return:
     """
     try:
