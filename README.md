@@ -518,3 +518,4 @@ Outputs:
 ![Admin](./picture/4.PNG)
 7. Terminate EC2 instance with Tags Key = Name, Value = Test
 8. Check the Route 53 A record is removed in Privated Host Zone
+### Note: You can modify the code for support CNAME tagging/ CNAME Route 53
