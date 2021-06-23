@@ -1,4 +1,4 @@
-# Dynamic DNS
+# AWS Route 53 Dynamic DNS 
 ##### Using CloudWatch Event EC2 Notification triggering Lambda function to automatically update Private IP address as an A record to Route 53 Private Zone, also using DynamoDB to store the information.
 ##### The Name Tags is using to identify the hostname of the server
 ##### I am not an pure DEV so please don't be angry with me for Python code stuff :P
