@@ -519,3 +519,4 @@ Outputs:
 7. Terminate EC2 instance with Tags Key = Name, Value = Test
 8. Check the Route 53 A record is removed in Privated Host Zone
 ### Note: You can modify the code for support CNAME tagging/ CNAME Route 53
+### Only EC2 which is crated/termianted after Lambda function creation takes into effect. Available EC2 needs stop/start or another solution (in developing) to update the record.
