@@ -9,7 +9,7 @@
 3. Using CloudWatch Event EC2 Notification - Terminated triggering Lambda function to remove Private IP address from Route 53 Private Hosted Zone, also remove to DynamoDB record.
 ![Admin](./picture/2.png)
 ## Details
-#### You must have Bastion host with terraform installed.
+#### You must have local host or any host with terraform and AWS CLI installed.
 1. Configure AWS credentials
 ```
 aws configure

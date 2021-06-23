@@ -4,7 +4,7 @@ environment = "dev"
 
 #Route 53
 private_hosted_zone_name = "dev.vubiquity.cloud"
-vpc_id = "vpc-09d6fa553b152264e"
+vpc_id = "vpc-0f6f613884bc62824"
 record_type = "A"
 
 #Lambda variables
