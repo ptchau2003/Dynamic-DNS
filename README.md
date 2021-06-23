@@ -512,13 +512,14 @@ Apply complete! Resources: 7 added, 0 changed, 0 destroyed.
 
 Outputs:
 ```
-5. Create an EC2 instance with Tags Key = Name, Value = Test
+5. Create an EC2 instance with Tags Key = Name, Value = <Test>
 #####
 ![Admin](./picture/3.png)
 6. Check the Route 53 A record is available in Privated Host Zone with hostname = Tags.Name, value = Private IP address
 #####
 ![Admin](./picture/4.PNG)
-7. Terminate EC2 instance with Tags Key = Name, Value = Test
+7. Terminate EC2 instance with Tags Key = Name, Value = <Test>
+#####
 8. Check the Route 53 A record is removed in Privated Host Zone
 ##### Note: You can modify the code for support CNAME tagging/ CNAME Route 53
 ##### Only EC2 which is crated/terminated after Lambda function creation takes into effect. Available EC2 needs stop/start or another solution (in developing) to update the record.
