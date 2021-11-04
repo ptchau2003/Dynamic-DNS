@@ -22,7 +22,7 @@ AWS Access Key ID [****************WWVC]:
 region = "us-east-1"
 environment = "dev"
 
-#Route 53
+##Route 53
 private_hosted_zone_name = "dev.XXXXXXXXXXXXXXX.cloud"  --> Change your Route 53 private hosted zone name here
 vpc_id = "vpc-XXXXXXXXXXXXXXXXXXXXXXXXXXX" --> Change your VPC ID here
 record_type = "A"
