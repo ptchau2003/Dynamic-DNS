@@ -14,4 +14,4 @@ jobs:
         ssh_private_key:
           ${{ secrets.CODECOMMIT_SSH_PRIVATE_KEY }}
         ssh_username:                                   # <-- (for codecommit) you need to specify ssh-key-id as ssh username.
-          ${{ secrets.APKA34DKFXR7M6DSQH76 }}
+          ${{ secrets.CODECOMMIT_SSH_PRIVATE_KEY_ID }}
